@@ -1,0 +1,30 @@
+title Exercise 0.4
+
+note over browser
+User submits form
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note \n form-data: "note"
+server-->browser: Redriect to /notes
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+server-->browser: HTML Response for notes
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+server-->browser: main.js
+
+note over browser:
+main.js requests for data.json
+end note
+
+browser->server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+
+note over server
+Send latest notes in json format
+end note 
+
+server-->browser: data.json \n [content: "foo" date: "bar"]
+
+note over browser:
+Retrieve and update notes
+end note
