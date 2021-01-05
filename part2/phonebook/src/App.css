@@ -1,0 +1,83 @@
+.container {
+  margin: 2rem;
+}
+
+.persons {
+  display: flex;
+  flex-direction: column;
+}
+
+.person {
+  display: flex;
+}
+
+.person--name {
+  display: inline-flex;
+  width: 140px;
+}
+
+.person--number {
+  display: inline-flex;
+  width: 125px;
+}
+
+.label {
+  width: 140px;
+  display: inline-flex;
+}
+
+.input {
+  border: 1px solid #e62f75;
+  border-radius: 4px;
+  padding: 7px;
+  margin: 0 0 15px 0;
+}
+
+.button {
+  background: #eb48a7;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 7px 10px;
+  margin: 0 0 5px;
+}
+
+.submit {
+  background: #eb48a7;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 7px 10px;
+}
+
+.button.submit {
+  margin: 0 0 0 17.5rem;
+}
+
+button:hover {
+  background: #61f7ef;
+}
+
+h1,
+h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.notification {
+  color: #19a919;
+  background: #c6f9c6;
+  border: 1px solid #19a919;
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: #f50000;
+  background: #ffdddd;
+  border: 1px solid #f50000;
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 10px;
+}
